@@ -61,7 +61,7 @@ class RouteParameterResolver {
     return ParamConfig(
       type: type,
       element: parameterElement,
-      name: paramName!,
+      name: paramName ?? '',
       alias: paramAlias,
       isPositional: parameterElement.isPositional,
       hasRequired: parameterElement.isRequired,
